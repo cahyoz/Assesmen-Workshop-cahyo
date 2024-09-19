@@ -28,5 +28,11 @@
         <input type="file" class="form-control" id="evidence" cam-variable-name="evidence" cam-variable-type="File">
     </div>
 </form>
-
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Set today's date as the minimum date for the date picker
+        var today = new Date().toISOString().split('T')[0];
+        document.getElementById('date').setAttribute('min', today);
+    });
+</script>
 </html>
